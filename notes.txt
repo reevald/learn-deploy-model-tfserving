@@ -12,11 +12,11 @@ http://localhost:8080/v1/models/kertas-batu-gunting/metadata
 
 
 # GCP
-- [GUI] You can using Cloud Build in GCP
-- [CLI] or using gcloud cli (need setup first, we don't cover it yet)
-
+[GUI] You can using Cloud Build in GCP
+or
+[CLI]
 - Build [CLI]
 gcloud builds submit --config cloudbuild.yaml
 
 - DEPLOY TO CLOUD RUN [CLI]
-gcloud run deploy kertas-batu-gunting --platform managed --region asia-southeast2 --image gcr.io/fourth-jigsaw-382203/kertas-batu-gunting --allow-unauthenticated
+gcloud run deploy kertas-batu-gunting --platform managed --region asia-southeast2 --image gcr.io/<your project id in gcp>/kertas-batu-gunting --allow-unauthenticated
